@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example:</title>
+</head>
+<body>
+    <!-- <form> this tag is used to collect data from user eg. signup/login/help request/contact me -->
+    <!-- Attributes of form 1.<action> (It means when click the data go there )-->
+        <!-- Elements of Form 1. input -->
+        <h3>Registration Form:</h3>
+        <hr>
+        <form action="/action.php">
+            <h5>Write your username and password:</h5>
+            <!-- Text is the attribute of type in which whatever text we will write -->
+            <input type="text" placeholder="Username ">
+            <br/>
+            <br/>
+            <!-- password is the attribute of type in whichwe write our password but it shows in bullet -->
+            <input type="password" placeholder="Password ">
+            <br/>
+
+            <hr>
+            <h5>Choose Your class:</h5>
+
+            <!-- Lables  1.radio butto works as a choose format like MCQ type only choose one since here class name is same therefore we choose only one-->
+          <label for="101"><input type="radio"  value="Class 11th" id="101" name="Class">Class 11th </label>  
+          <label for="102"><input type="radio" value="Class 12th" id="102" name="Class">Class 12th</label>
+         <br>
+
+         <hr>
+         <h5>Select Your subjects:</h5>
+
+         <!-- Lables 2.Checkbox used when multiple selection would be there-->
+         <lable for="maths"><input type="checkbox" value="maths" name="Subject" id="102" >maths</lable> 
+         <lable for="physics"><input type="checkbox" value="physics" name="Subject" id="103" >physics</lable>
+         <lable for="cs"><input type="checkbox" value="cs" name="Subject" id="104" >cs</lable>
+         <lable for="maths"><input type="checkbox" value="maths" name="Subject" id="101" >maths</lable>
+
+         <br/>
+         <hr>
+         <!-- Lables 3. select tag works as dropdown  -->
+         <h5>Choose your city:</h5>
+         <select name="City">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Surat">Surat</option>
+            <option value="Kerala">Kerala</option>
+            <option value="UP">UP</option>
+            <option value="MP">MP</option>
+         </select>
+
+         <br/>
+         <hr>
+
+         <!-- Textarea this tag is used to get feedback from user it creates some space for that -->
+         <textarea name="Feedback" id="101" placeholder="please give yours valueable feedback here" rows="10" ></textarea>
+
+         <br/>
+         <hr>
+         <!-- Lable 4. Submit button which used to submit the given info to next file (action.php (Backend)) -->
+
+         <input type="submit" value="submit">
+        </form>
+    </form>
+
+</body>
+</html>
